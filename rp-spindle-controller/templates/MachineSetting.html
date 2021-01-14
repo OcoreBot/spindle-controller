@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+<html lang="en" dir="ltr">
+    {% block content %} 
+       <div style="height: 85vh;">
+       <form>
+            <div class="row " >
+              <h1>Machine Setting</h1>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">
+                    <label for="NCD">NCD Ignore Time:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="NCD" name="NCD"> 
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">
+                    <label for="NCDSence">NCD Sensitivity:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="NCDSence" name="NCDSence"> 
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">
+                    <label for="startkey">Start Key dBounce:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="startkey" name="startkey"> 
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">
+                    <label for="Resetkey">Reset Key dBounce:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="Resetkey" name="Resetkey"> 
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">
+                    <label for="PTO">Pulse Time Out:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="PTO" name="PTO"> 
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">
+                    <label for="CTO">Cutter Time Out:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="CTO" name="CTO"> 
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">
+                    <label >Cutter Operation for Doff:</label>
+                </div>
+                <div class="col-1">
+                    <input type="radio" id="cenable" name="CutterOp" value="Enable">
+                    <label for="CutterOpe">Enable</label>
+                </div>
+                <div class="col">
+                    <input type="radio" id="cdisable" name="CutterOp" value="Disable">
+                    <label for="CutterOpe">Disable</label>
+                </div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">
+                    <label >Cutter Feedback:</label>
+                </div>
+                <div class="col-1">
+                    <input type="radio" id="cfenable" name="CutterFeedback" value="Enable">
+                    <label for="CutterOpe">Enable</label>
+                </div>
+                <div class="col">
+                    <input type="radio" id="cfdisable" name="CutterFeedback" value="Disable">
+                    <label for="CutterOpe">Disable</label>
+                </div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">
+                    <label >Length Feedback:</label>
+                </div>
+                <div class="col-1">
+                    <input type="radio" id="lfenable" name="Lengthfeedback" value="Enable">
+                    <label for="CutterOpe">Enable</label>
+                </div>
+                <div class="col">
+                    <input type="radio" id="lfdisable" name="Lengthfeedback" value="Disable">
+                    <label for="CutterOpe">Disable</label>
+                </div>
+            </div>
+            <div class="row m-4"  >
+                <div class="col">
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="Set">SET</button>
+                </div>
+                <div class="col">    
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="cancel">Cancel</button>
+                </div>
+                <div class="col">    
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    {% endblock %}
+    
+</html>    

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+<html lang="en" dir="ltr">
+    {% block content %} 
+        <div id="container"></div>
+        <div class="bottomright">64</div> 
+        <script>
+          var myTableDiv = document.getElementById("container");
+          function addTable() {
+            
+            var table = document.createElement('TABLE');
+            table.style.width = '100%';
+            table.style.height='90vh';
+            var tableBody = document.createElement('TBODY');
+            table.appendChild(tableBody);
+    
+            for (var i = 0; i < 8; i++) {
+              var tr = document.createElement('TR');
+              tableBody.appendChild(tr);
+    
+              for (var j = 0; j < 8; j++) {
+                var td = document.createElement('TD');
+                td.innerHTML='<button type="button" id="'+String(i)+String(j)+'"class="btn btn-success btn-circle btn-lg"></button>';
+                tr.appendChild(td);
+              }
+            }
+            myTableDiv.appendChild(table);
+          }
+          addTable();
+        </script>
+    {% endblock %} 
+   
+   
+   
+  
+</html>

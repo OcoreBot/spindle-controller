@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+<html lang="en" dir="ltr">
+    {% block content %} 
+       <div style="height: 85vh;">
+       <form>
+            <div class="row " >
+              <h1>Factory Setting</h1>
+            </div>
+            <div class="row m-4" >
+                <div class="col">
+                  <h5 >Spindle Number Setting:</h5>
+                 
+                </div>
+                <div class="col">
+                </div>
+                <div class="col-1">
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="sns">ENT</button>
+                </div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <label for="nos">Number of Spindles:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="nos" name="nos"> 
+                   
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <label for="motor">Motor RPM @60 hz:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="motor" name="Motor"> 
+                    
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <label for="dd">Drum Diameter (mm):</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="dd" name="dd"> 
+                    
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" style="height:20vh;">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <label for="pr">Pulse Per Revolution:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="pr" name="pr"> 
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4"  >
+                <div class="col">
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="Set">SET</button>
+                </div>
+                <div class="col">    
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="cancel">Cancel</button>
+                </div>
+                <div class="col">    
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    {% endblock %}
+    
+</html>    

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+<html lang="en" dir="ltr">
+    {% block content %} 
+    <div style="height: 85vh;">    
+       <form>
+            <div class="row " >
+              <h1>Setting/Group Settings</h1>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2"></div>
+                <div class="col-2"></div>
+                <div class="col-1"><h5>From</h5></div>
+                <div class="col-1"></div>
+                <div class="col-1"><h5>To</h5></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2"></div>
+                <div class="col-2">Group #1</div>
+                <div class="col-1"><input type="text" id="frg1"> </div>
+                <div class="col-1"></div>
+                <div class="col-1"><input type="text" id="trg1"></div>
+            </div>
+            <div class="row m-4">
+                <div class="col-2"></div>
+                <div class="col-2">Group #2</div>
+                <div class="col-1"><input type="text" id="frg2"> </div>
+                <div class="col-1"></div>
+                <div class="col-1"><input type="text" id="trg2"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2"><h5 style="color:  #45a5ae;">Right</h5></div>
+                <div class="col-2">Group #3</div>
+                <div class="col-1"><input type="text" id="frg3"> </div>
+                <div class="col-1"></div>
+                <div class="col-1"><input type="text" id="trg3"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2"></div>
+                <div class="col-2">Group #4</div>
+                <div class="col-1"><input type="text" id="frg4"> </div>
+                <div class="col-1"></div>
+                <div class="col-1"><input type="text" id="trg4"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2"></div>
+                <div class="col-2">Group #1</div>
+                <div class="col-1"><input type="text" id="flg1"> </div>
+                <div class="col-1"></div>
+                <div class="col-1"><input type="text" id="tlg1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2"></div>
+                <div class="col-2">Group #2</div>
+                <div class="col-1"><input type="text" id="flg2"> </div>
+                <div class="col-1"></div>
+                <div class="col-1"><input type="text" id="tlg2"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2"><h5 style="color:  #45a5ae;">Left</h5></div>
+                <div class="col-2">Group #3</div>
+                <div class="col-1"><input type="text" id="flg3"> </div>
+                <div class="col-1"></div>
+                <div class="col-1"><input type="text" id="tlg3"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2"></div>
+                <div class="col-2">Group #4</div>
+                <div class="col-1"><input type="text" id="flg4"> </div>
+                <div class="col-1"></div>
+                <div class="col-1"><input type="text" id="tlg4"></div>
+            </div>
+            
+            <div class="row m-4" >
+                <div class="col">
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="Set">SET</button>
+                </div>
+                <div class="col">    
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="cancel">Cancel</button>
+                </div>
+                <div class="col">    
+                </div>
+            </div>
+        </form>
+        </div>
+    {% endblock %}
+    
+</html>    

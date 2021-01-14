@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+<html lang="en" dir="ltr">
+    {% block content %} 
+   
+       <form>
+            <div class="row " >
+              <h1>Setting</h1>
+            </div>
+            <div class="row m-4" >
+              <div class="col">
+                <label for="Time">Select Time:</label>
+                <input type="time" id="Time" name="Time">
+              </div>
+              <div class="col">
+                <label for="setDate">Select Date:</label>
+                <input type="date" id="setDate" name="setDate">
+                <!--Note:type="date" is not supported in Safari or Internet Explorer 11 (or earlier)-->
+              </div>
+              <div class="col-1">
+                <button type="button" class="btn btn-primary btn-sm fbtn " id="setDT">SET</button>
+              </div>
+            </div>
+            <div class="row m-4" >
+                <div class="col">
+                  <h5 >Group Setting:</h5>
+                 
+                </div>
+                <div class="col">
+                </div>
+                <div class="col-1">
+                    <a href="/Setting/GroupSettings">
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="GS">ENT</button></a>
+                </div>
+            </div>
+            <div class="row m-4">
+                
+                <div class="col">
+                  <h5 >Group Length Setting:</h5>
+                 
+                </div>
+                <div class="col">
+                </div>
+                <div class="col-1">
+                    <a href="/Setting/GroupLengthSettings">
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="GLS">ENT</button></a>
+                </div>
+            </div>
+            <div class="row m-4" >
+                <div class="col">
+                  <h5 >APD Setting:</h5>
+                 
+                </div>
+                <div class="col">
+                </div>
+                <div class="col-1">
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="APD">SET</button>
+                </div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <label for="setSpeed">Select Speed:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="setSpeed" name="setSpeed"> 
+                    <span>mm</span>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <label for="DIP">DIP:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="DIP" name="DIP"> 
+                    <span>%</span>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <label for="DIPtime">DIP Time:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="DIPtime" name="DIPtime"> 
+                    <span>sec</span>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <label for="cycletime">Cycle Time:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="cycletime" name="cycletime"> 
+                    <span>sec</span>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col">
+                  <h5 >Shift Setting:</h5>
+                 
+                </div>
+                <div class="col">
+                </div>
+                <div class="col-1">
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="ss">ENT</button>
+                </div>
+            </div>
+            <div class="row m-4" >
+                <div class="col">
+                  <h5 >User Setting:</h5>
+                 
+                </div>
+                <div class="col">
+                </div>
+                <div class="col-1">
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="us">ENT</button>
+                </div>
+            </div>
+            <div class="row m-4" >
+                <div class="col">
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="cancel">Cancel</button>
+                </div>
+                <div class="col-1">    
+                </div>
+            </div>
+            
+        </form>
+    {% endblock %}
+    
+</html>    

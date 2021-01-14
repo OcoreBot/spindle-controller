@@ -1,0 +1,61 @@
+#main,body{
+    height: 100%;
+   
+ 
+}
+form{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#logo{
+    color:#57ad86;
+    font-weight:bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 500%;
+
+    
+}
+.fbtn{
+    background-color: #45a5ae !important;
+    border-color:black!important ;
+    color: black !important;
+}
+#menubar{
+    float:right;
+    background-color: #d1d2d4;
+    /*height:90vh;*/  
+ 
+}
+a{
+    color: inherit !important;
+    text-decoration: none !important;
+}
+.btn-circle.btn-lg {
+    width: 40px;
+    height: 40px;
+    margin-left: 30%;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 25px;
+    color: green;
+    
+}
+#footer{
+    background-color: #d1d2d4 ; 
+    
+   
+}
+.bottomright {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    font-size: 18px;
+    color: red;
+}
+#Date{
+    vertical-align:middle;
+}
+
+   

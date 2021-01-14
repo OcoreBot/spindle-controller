@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+<html lang="en" dir="ltr">
+    {% block content %} 
+    <div style="height: 85vh;">    
+       <form>
+            <div class="row " >
+              <h1>Setting/Group Length Settings</h1>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">Reight Gr 1 from</div>
+                <div class="col-1" id="fr1"></div>
+                <div class="col-1">To</div>
+                <div class="col-1" id="tr1" ></div>
+                <div class="col-1">Length</div>
+                <div class="col"><input type="text" id="l1"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">Reight Gr 2 from</div>
+                <div class="col-1" id="fr2"></div>
+                <div class="col-1">To</div>
+                <div class="col-1" id="tr2" ></div>
+                <div class="col-1">Length</div>
+                <div class="col"><input type="text" id="l2"></div>
+            </div>
+            <div class="row m-4">
+                <div class="col-2">Reight Gr 3 from</div>
+                <div class="col-1" id="fr3"></div>
+                <div class="col-1">To</div>
+                <div class="col-1" id="tr3" ></div>
+                <div class="col-1">Length</div>
+                <div class="col"><input type="text" id="l3"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">Reight Gr 4 from</div>
+                <div class="col-1" id="fr4"></div>
+                <div class="col-1">To</div>
+                <div class="col-1" id="tr4" ></div>
+                <div class="col-1">Length</div>
+                <div class="col"><input type="text" id="l4"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">Left Gr 1 from</div>
+                <div class="col-1" id="fl1"></div>
+                <div class="col-1">To</div>
+                <div class="col-1" id="tl1" ></div>
+                <div class="col-1">Length</div>
+                <div class="col"><input type="text" id="l5"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">Left Gr 2 from</div>
+                <div class="col-1" id="fl2"></div>
+                <div class="col-1">To</div>
+                <div class="col-1" id="tl2" ></div>
+                <div class="col-1">Length</div>
+                <div class="col"><input type="text" id="l6"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">Left Gr 3 from</div>
+                <div class="col-1" id="fl3"></div>
+                <div class="col-1">To</div>
+                <div class="col-1" id="tl3" ></div>
+                <div class="col-1">Length</div>
+                <div class="col"><input type="text" id="l7"></div>
+            </div>
+            <div class="row m-4" >
+                <div class="col-2">Left Gr 4 from</div>
+                <div class="col-1" id="fl4"></div>
+                <div class="col-1">To</div>
+                <div class="col-1" id="tl4" ></div>
+                <div class="col-1">Length</div>
+                <div class="col"><input type="text" id="l8"></div>
+            </div>
+           
+            
+            <div class="row m-4" >
+                <div class="col">
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="Set">SET</button>
+                </div>
+                <div class="col">    
+                    <button type="button" class="btn btn-primary btn-sm fbtn " id="cancel">Cancel</button>
+                </div>
+                <div class="col">    
+                </div>
+            </div>
+        </form>
+    </div>
+    {% endblock %}
+    
+</html>    
